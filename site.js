@@ -15,10 +15,11 @@
     });
   }
 
-  // mark active nav link by filename
-  var here=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+  // mark active nav link by clean path
+  var path=location.pathname.replace(/\/$/,'').toLowerCase();
+  var here=(path.split('/').pop()||'index');
   document.querySelectorAll('.nav-links a').forEach(function(a){
-    var href=(a.getAttribute('href')||'').toLowerCase();
+    var href=(a.getAttribute('href')||'').replace(/\/$/,'').replace(/^\//,'').toLowerCase() || 'index';
     if(href===here){a.classList.add('active');}
   });
 
