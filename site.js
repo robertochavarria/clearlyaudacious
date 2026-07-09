@@ -1,17 +1,24 @@
-/* Humble Audacity — shared site behaviour */
+/* Clearly Audacious — shared site behaviour */
 (function(){
   // nav border on scroll
   var nav=document.getElementById('nav');
   if(nav){
-    addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>30);});
+    addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>30);},{passive:true});
   }
 
   // mobile menu
   var toggle=document.querySelector('.nav-toggle');
   if(toggle){
-    toggle.addEventListener('click',function(){document.body.classList.toggle('menu-open');});
+    toggle.setAttribute('aria-expanded','false');
+    toggle.addEventListener('click',function(){
+      var open=document.body.classList.toggle('menu-open');
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    });
     document.querySelectorAll('.nav-links a').forEach(function(a){
-      a.addEventListener('click',function(){document.body.classList.remove('menu-open');});
+      a.addEventListener('click',function(){
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded','false');
+      });
     });
   }
 
@@ -35,7 +42,7 @@
       el.style.setProperty('--d',(i*0.08)+'s');
     });
   }
-  stagger('.problems'); stagger('.cards');
+  stagger('.problems'); stagger('.cards'); stagger('.outcomes');
 
   // ---- the climbing line: draw a path threading the four dots ----
   var climb=document.getElementById('climb');
