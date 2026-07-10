@@ -22,11 +22,10 @@
     });
   }
 
-  // mark active nav link by clean path
-  var path=location.pathname.replace(/\/$/,'').toLowerCase();
-  var here=(path.split('/').pop()||'index');
+  // mark active nav link by filename
+  var here=(location.pathname.split('/').pop()||'index.html').toLowerCase();
   document.querySelectorAll('.nav-links a').forEach(function(a){
-    var href=(a.getAttribute('href')||'').replace(/\/$/,'').replace(/^\//,'').toLowerCase() || 'index';
+    var href=(a.getAttribute('href')||'').toLowerCase();
     if(href===here){a.classList.add('active');}
   });
 
