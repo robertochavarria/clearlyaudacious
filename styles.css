@@ -166,9 +166,12 @@ em.key{font-style:italic;color:var(--ink);font-family:var(--serif)}
 
 /* pull quote */
 .quote{background:var(--ink);color:var(--bg);padding:118px 0;text-align:center;position:relative;overflow:hidden}
-.quote blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(30px,5vw,58px);line-height:1.12;letter-spacing:-0.02em;max-width:18ch;margin:0 auto}
+.quote blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(27px,3vw,42px);line-height:1.18;letter-spacing:-0.02em;max-width:none;margin:0 auto}
+.quote__line{display:block;white-space:nowrap}
+.quote strong{font-weight:600;color:#7CA7D4}
 .quote blockquote em{font-style:italic;color:#7CA7D4}
 .quote cite{display:block;margin-top:32px;font-family:var(--mono);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(241,231,212,0.55);font-style:normal}
+@media(max-width:860px){.quote{padding:86px 0}.quote blockquote{font-size:clamp(28px,7vw,40px)}.quote__line{white-space:normal}}
 
 /* shape of work — ascending steps */
 .climb-shell{margin-top:70px;position:relative}
