@@ -1,148 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Approach — Clearly Audacious</title>
-<meta name="description" content="A guided passage from stuck to in motion — the shape of a Clearly Audacious engagement, step by step.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="The Approach — Clearly Audacious">
-<meta property="og:description" content="A guided passage from stuck to in motion — the shape of a Clearly Audacious engagement, step by step.">
-<meta property="og:image" content="images/workshop-web.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/images/roberto-round.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
-<noscript><style>.reveal{opacity:1!important;transform:none!important}h1 .ln i,.hero-kicker,.hero-sub,.hero-actions,.hero-portrait,.masthead .eyebrow,.masthead h1,.masthead .standfirst{opacity:1!important;transform:none!important}</style></noscript>
-</head>
-<body data-screen-label="Approach">
-
-<nav id="nav">
-  <a class="brand" href="/"><span class="brand-name">Clearly <em>Audacious</em></span><span class="brand-sub">Strategic Clarity Consulting</span></a>
-  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  <div class="nav-links">
-    <a href="/approach/">Approach</a>
-    <a href="/about/">About</a>
-    <a href="/work/">Work together</a>
-    <a href="/contact/" class="nav-cta">Start a conversation <span class="arr">→</span></a>
-  </div>
-</nav>
-
-<header class="masthead" data-screen-label="Masthead">
-  <div class="wrap">
-    <span class="eyebrow">The approach</span>
-    <h1>A guided passage from <em>stuck</em> to <em>in motion</em>.</h1>
-    <p class="standfirst">Clearly Audacious isn't a strategy deck handed across a table. It's a journey I take you and your team through — up to where you can see the whole thing again, and back down with a plan you believe in.</p>
-    <svg class="risingline" viewBox="0 0 1100 120" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,98 L460,98 C620,98 640,92 760,58 C860,30 980,18 1090,12"/>
-      <circle cx="1090" cy="12" r="5"/>
-    </svg>
-  </div>
-</header>
-
-<section id="what" data-screen-label="What it is">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="num">What it is</span>
-      <h2>We step back far enough to see your whole business at once.</h2>
-    </div>
-    <div class="reveal">
-      <p class="lead">The forest and the trees, the pieces and the way they fit — held in view all at the same time.</p>
-      <p class="body">We find the throughline that connects what you do to why you do it. We surface the places where understanding has quietly fractured — where smart people who want the same thing have been speaking different languages without realizing it. And we come back down with three things you didn't have when we started: a shared picture everyone can see, a plan you believe in, and the renewed momentum to chase something that once felt just out of reach.</p>
-      <p class="body"><em class="key">Vision, clarity, alignment, a real path forward, and the resolve to take it.</em> That's what you leave with.</p>
-    </div>
-  </div>
-</section>
-
-<figure class="photoband reveal">
-  <img src="/images/workshop-web.png" alt="A Clearly Audacious strategy session in progress" style="object-position:50% 44%">
-  <figcaption class="cap"><b>In the room.</b> &nbsp;A working session — the whole picture going up on the wall, one honest sticky note at a time.</figcaption>
-</figure>
-
-<section id="shape" data-screen-label="Shape of the work">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="num">The shape of the work</span>
-      <h2>Every engagement is built around your situation. The arc tends to climb the same way.</h2>
-    </div>
-    <div class="climb-shell reveal" id="climbShell">
-      <div class="climb" id="climb">
-        <svg class="climbline" id="climbline" aria-hidden="true" preserveAspectRatio="none">
-          <path class="glow" id="climbGlow" d=""></path>
-          <path id="climbPath" d=""></path>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How I Work — Clearly Audacious</title>
+    <meta
+      name="description"
+      content="How Roberto Chavarria helps founders and executives see the whole situation, find the underlying pattern, and give clarity a form the business can use."
+    />
+    <link
+      rel="canonical"
+      href="https://clearlyaudacious.robertochavarria.com/approach/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How I Work — Clearly Audacious" />
+    <meta
+      property="og:description"
+      content="See the whole situation, find what matters, and give clarity a form the business can use."
+    />
+    <meta
+      property="og:url"
+      content="https://clearlyaudacious.robertochavarria.com/approach/"
+    />
+    <meta
+      property="og:image"
+      content="https://clearlyaudacious.robertochavarria.com/images/workshop-web.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/images/roberto-round.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=2" />
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .masthead .eyebrow,
+        .masthead h1,
+        .masthead .standfirst {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body data-screen-label="Approach">
+    <nav id="nav">
+      <a class="brand" href="/"
+        ><span class="brand-name">Clearly <em>Audacious</em></span
+        ><span class="brand-sub">Strategic Clarity Consulting</span></a
+      ><button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="/approach/">How I work</a><a href="/about/">About</a
+        ><a href="/work/">Work together</a
+        ><a href="/contact/" class="nav-cta"
+          >Start a conversation <span class="arr">→</span></a
+        >
+      </div>
+    </nav>
+    <header class="masthead" data-screen-label="Masthead">
+      <div class="wrap">
+        <span class="eyebrow">How I work</span>
+        <h1>
+          See the whole situation. Find what matters. Give clarity a form the
+          business can <em>use.</em>
+        </h1>
+        <p class="standfirst">
+          I stay with the complexity long enough for the real pattern to become
+          visible, then help turn what we see into a decision, conversation,
+          plan, or practice that can move the work forward.
+        </p>
+        <svg
+          class="risingline"
+          viewBox="0 0 1100 120"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M0,98 L460,98 C620,98 640,92 760,58 C860,30 980,18 1090,12"
+          />
+          <circle cx="1090" cy="12" r="5" />
         </svg>
-        <div class="step">
-          <span class="num">01</span><div class="dot"></div>
-          <h4>See the whole</h4>
-          <p>Get above the day-to-day and map the entire landscape — business, mission, people, and the forces acting on all three — until the real picture comes into focus.</p>
+      </div>
+    </header>
+    <section id="what" data-screen-label="Working posture">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">The working posture</span>
+          <h2>
+            The business problem and the human situation often belong in the
+            same conversation.
+          </h2>
         </div>
-        <div class="step">
-          <span class="num">02</span><div class="dot"></div>
-          <h4>Reconnect the why</h4>
-          <p>Dig back down to the purpose underneath the work — the thing that's so easy to lose and impossible to lead without.</p>
-        </div>
-        <div class="step">
-          <span class="num">03</span><div class="dot"></div>
-          <h4>Find the shared language</h4>
-          <p>Close the translation gaps until the team isn't just nodding along, but actually seeing the same thing.</p>
-        </div>
-        <div class="step">
-          <span class="num">04</span><div class="dot"></div>
-          <h4>Chart the path, light the momentum</h4>
-          <p>Turn all of it into a plan you believe in — and the collective resolve to move on it the day we finish.</p>
+        <div class="reveal section-intro">
+          <p class="lead">
+            Strategy, communication, history, identity, and competing
+            understandings of what matters can become tangled together.
+          </p>
+          <p class="body">
+            I listen for what is being said, what remains implicit, and where
+            people may be solving different versions of the problem. I pay
+            attention to the leader, the relationships around them, and the
+            wider system. The purpose is to find the leverage point where
+            clearer understanding can become useful movement.
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<figure class="photoband reveal">
-  <img src="/images/facilitating-1-web.jpg" alt="Roberto Chavarria facilitating a strategy session at a whiteboard" style="object-position:50% 38%">
-  <figcaption class="cap"><b>Standing in the gap.</b> &nbsp;Helping capable people who want the same thing finally see the same picture.</figcaption>
-</figure>
-
-<section class="page-cta" data-screen-label="Let's talk">
-  <div class="wrap reveal">
-    <span class="eyebrow">Ready to begin</span>
-    <h2>There's more than one way <em>in</em>.</h2>
-    <p>From a standing advisory partnership to a transformational workshop, find the engagement that matches how far, and how fast, you're ready to move.</p>
-    <div class="hero-actions">
-      <a href="/work/" class="btn">See ways to work together <span class="arr">→</span></a>
-      <a href="/contact/" class="textlink">Start a conversation <span class="arr">→</span></a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot">
-      <div class="foot-col foot-brandcol">
-        <div class="foot-id"><img src="/images/roberto-round.png" alt="Roberto Chavarria"><div class="brand"><span class="brand-name">Clearly <em>Audacious</em></span></div></div>
-        <p class="foot-tagline">Strategy consulting for mission-driven founders and leadership teams.</p>
-        <a class="foot-practice" href="https://robertochavarria.com" target="_blank" rel="noopener">A practice of Roberto Chavarria <span class="arr">↗</span></a>
+    </section>
+    <figure class="photoband reveal">
+      <img
+        src="/images/workshop-web.png"
+        alt="A Clearly Audacious working session in progress"
+        class="photo-focus-workshop"
+      />
+      <figcaption class="cap">
+        <b>In the room.</b> &nbsp;The whole situation coming into view, one
+        honest contribution at a time.
+      </figcaption>
+    </figure>
+    <section id="shape" data-screen-label="Shape of the work">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">The shape of the work</span>
+          <h2>
+            Every engagement follows the situation. These movements tend to
+            matter.
+          </h2>
+        </div>
+        <div class="climb-shell reveal" id="climbShell">
+          <div class="climb" id="climb">
+            <svg
+              class="climbline"
+              id="climbline"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+            >
+              <path class="glow" id="climbGlow" d=""></path>
+              <path id="climbPath" d=""></path>
+            </svg>
+            <div class="step">
+              <span class="num">01</span>
+              <div class="dot"></div>
+              <h4>Let the whole situation come into view</h4>
+              <p>
+                We look beyond the presenting problem at the business, the
+                relationships, the history, and your own response as the leader.
+              </p>
+            </div>
+            <div class="step">
+              <span class="num">02</span>
+              <div class="dot"></div>
+              <h4>Find the pattern underneath it</h4>
+              <p>
+                We distinguish symptoms from causes and identify where
+                understanding, ownership, or action is actually breaking down.
+              </p>
+            </div>
+            <div class="step">
+              <span class="num">03</span>
+              <div class="dot"></div>
+              <h4>Clarify what the moment requires</h4>
+              <p>
+                We work with what you want, the assumptions shaping your
+                choices, and the conversation or decision that matters now.
+              </p>
+            </div>
+            <div class="step">
+              <span class="num">04</span>
+              <div class="dot"></div>
+              <h4>Give clarity a usable form</h4>
+              <p>
+                What becomes clear enters the business through explicit
+                language, a decision, a conversation, a plan, or a new operating
+                practice.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="foot-col">
-        <h4>Explore</h4>
-        <a href="/approach/">The approach</a>
-        <a href="/about/">About Roberto</a>
-        <a href="/work/">Ways to work together</a>
-        <a href="/contact/">Contact</a>
+    </section>
+    <section class="tight" data-screen-label="What this looks like">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="num">What this can look like</span>
+          <h2>The form follows the situation.</h2>
+        </div>
+        <div class="examples-grid">
+          <div class="example reveal">
+            <h3>A consequential decision</h3>
+            <p>
+              We examine the opportunity, the risks, the people affected, and
+              what your own hesitation or urgency may be telling you.
+            </p>
+          </div>
+          <div class="example reveal">
+            <h3>A difficult relationship</h3>
+            <p>
+              We make the underlying dynamic visible and prepare a conversation
+              that tells the truth without trying to control the response.
+            </p>
+          </div>
+          <div class="example reveal">
+            <h3>A strategy the team cannot carry</h3>
+            <p>
+              We find where the picture diverges, clarify the choices, and
+              create language and ownership strong enough to guide action.
+            </p>
+          </div>
+          <div class="example reveal">
+            <h3>A recurring organizational problem</h3>
+            <p>
+              We trace the loop beneath the latest incident and change the role,
+              agreement, rhythm, or decision that keeps recreating it.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="foot-col">
-        <h4>Get in touch</h4>
-        <a href="mailto:hello@robertochavarria.com">hello@robertochavarria.com</a>
-        <a href="/contact/">Start a conversation →</a>
+    </section>
+    <figure class="photoband reveal">
+      <img
+        src="/images/facilitating-1-web.jpg"
+        alt="Roberto Chavarria facilitating a strategy session"
+        class="photo-focus-facilitating"
+      />
+      <figcaption class="cap">
+        <b>Working across the whole.</b> &nbsp;Helping people see what is
+        happening and decide what to do next.
+      </figcaption>
+    </figure>
+    <section class="page-cta" data-screen-label="Work together">
+      <div class="wrap reveal">
+        <span class="eyebrow">Work together</span>
+        <h2>
+          The work can begin with you and expand when the organization needs to
+          enter the conversation.
+        </h2>
+        <p>
+          Explore the ongoing relationship, strategic diagnostics, and team
+          workshops.
+        </p>
+        <div class="hero-actions">
+          <a href="/work/" class="btn"
+            >See ways to work together <span class="arr">→</span></a
+          ><a href="/contact/" class="textlink"
+            >Start a conversation <span class="arr">→</span></a
+          >
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="foot-base">
-    <div>Roberto Chavarria · robertochavarria.com</div>
-    <div>Clearly Audacious © 2026</div>
-  </div>
-</footer>
-
-<script src="/site.js"></script>
-</body>
+    </section>
+    <footer>
+      <div class="wrap">
+        <div class="foot">
+          <div class="foot-col foot-brandcol">
+            <div class="foot-id">
+              <img src="/images/roberto-round.png" alt="Roberto Chavarria" />
+              <div class="brand">
+                <span class="brand-name">Clearly <em>Audacious</em></span>
+              </div>
+            </div>
+            <p class="foot-tagline">
+              Strategic clarity for founders and executives.
+            </p>
+            <p class="foot-location">Boulder, Colorado · Working worldwide</p>
+            <a
+              class="foot-practice"
+              href="https://robertochavarria.com"
+              target="_blank"
+              rel="noopener"
+              >A practice of Roberto Chavarria <span class="arr">↗</span></a
+            >
+          </div>
+          <div class="foot-col">
+            <h4>Explore</h4>
+            <a href="/approach/">How I work</a
+            ><a href="/about/">About Roberto</a
+            ><a href="/work/">Work together</a><a href="/contact/">Contact</a>
+          </div>
+          <div class="foot-col">
+            <h4>Get in touch</h4>
+            <a href="mailto:hello@robertochavarria.com"
+              >hello@robertochavarria.com</a
+            ><a href="/contact/">Start a conversation →</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-base">
+        <div>Roberto Chavarria · robertochavarria.com</div>
+        <div>Clearly Audacious © 2026</div>
+      </div>
+    </footer>
+    <script src="/site.js?v=2"></script>
+  </body>
 </html>
