@@ -63,6 +63,7 @@ body::after {
   padding: 7px 16px 7px 13px;
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+  white-space: nowrap;
 }
 .eyebrow::before {
   content: "";
@@ -303,21 +304,23 @@ header.hero {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.4fr 0.82fr;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.72fr);
   gap: 60px;
   align-items: center;
 }
 h1 {
   font-family: var(--serif);
   font-weight: 330;
-  font-size: clamp(46px, 8vw, 104px);
+  font-size: clamp(46px, 7vw, 88px);
   line-height: 0.98;
   letter-spacing: -0.02em;
-  max-width: 14ch;
+  max-width: 16ch;
+  text-wrap: balance;
 }
 h1 .ln {
   display: block;
   overflow: hidden;
+  text-wrap: balance;
 }
 h1 .ln i {
   display: block;
@@ -413,6 +416,7 @@ h1 em {
   font-weight: 330;
   letter-spacing: -0.02em;
   max-width: 18ch;
+  text-wrap: balance;
   opacity: 0;
   animation: rise 0.9s 0.18s ease forwards;
 }
@@ -456,6 +460,17 @@ section.tight {
   font-size: clamp(30px, 4.2vw, 46px);
   line-height: 1.05;
   letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.num,
+.lab {
+  white-space: nowrap;
 }
 .sec-head h2 em {
   font-style: italic;
@@ -1056,6 +1071,7 @@ a.card {
   letter-spacing: -0.02em;
   max-width: 17ch;
   margin: 0 auto 26px;
+  text-wrap: balance;
 }
 .page-cta h2 em {
   font-style: italic;
@@ -1574,7 +1590,7 @@ a.capability:hover {
 }
 .work-rhythm h3 {
   font-family: var(--serif);
-  font-size: 24px;
+  font-size: clamp(20px, 1.65vw, 23px);
   font-weight: 420;
   line-height: 1.15;
   margin-bottom: 12px;
@@ -1635,6 +1651,9 @@ a.capability:hover {
   .work-rhythm {
     grid-template-columns: 1fr 1fr;
   }
+  .work-rhythm h3 {
+    font-size: 24px;
+  }
   .work-rhythm > div:nth-child(3) {
     border-left: 0;
     padding-left: 0;
@@ -1647,6 +1666,10 @@ a.capability:hover {
   .feature-panel,
   .roberto-teaser {
     grid-template-columns: 1fr;
+  }
+  .masthead h1 {
+    font-size: clamp(38px, 7.2vw, 58px);
+    max-width: 20ch;
   }
   .feature-copy {
     padding: 42px 30px;
@@ -1671,6 +1694,9 @@ a.capability:hover {
   .work-rhythm {
     grid-template-columns: 1fr;
   }
+  .work-rhythm h3 {
+    font-size: 24px;
+  }
   .work-rhythm > div,
   .work-rhythm > div + div,
   .work-rhythm > div:nth-child(3) {
@@ -1679,5 +1705,20 @@ a.capability:hover {
   }
   .feature-copy h3 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .capability h3 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 340px) {
+  .masthead h1 {
+    font-size: 35px;
+  }
+  .page-cta h2 {
+    font-size: 31px;
   }
 }
