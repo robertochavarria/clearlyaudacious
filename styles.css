@@ -1340,6 +1340,26 @@ footer {
   }
 }
 @media (max-width: 560px) {
+  .eyebrow,
+  .num,
+  .lab {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .eyebrow {
+    display: inline-flex;
+    line-height: 1.45;
+  }
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .hero-actions .btn,
+  .hero-actions .textlink {
+    max-width: 100%;
+    white-space: normal;
+  }
   .foot {
     grid-template-columns: 1fr;
   }
