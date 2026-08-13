@@ -19,18 +19,17 @@ Public pricing is intentionally omitted until the offer and numbers are explicit
 
 ```text
 index.html              Home
-approach/index.html     How I Work
 about/index.html        About Roberto
 work/index.html         Work Together
 contact/index.html      Start a Conversation
 styles.css              Shared design system and responsive styles
-site.js                 Navigation, reveal behavior, and climbing-line animation
+site.js                 Navigation and reveal behavior
 images/                 Production images
 CNAME                   GitHub Pages custom domain
 .nojekyll               Serve files without Jekyll processing
 ```
 
-Legacy root files (`about.html`, `approach.html`, `work.html`, and `contact.html`) are lightweight compatibility redirects to the canonical directory routes.
+Legacy root files (`about.html`, `work.html`, and `contact.html`) are lightweight compatibility redirects to the canonical directory routes. The retired `/approach/` route and `approach.html` redirect to Work Together.
 
 ## Local preview
 
@@ -54,7 +53,7 @@ git commit -m "Update Clearly Audacious positioning"
 git push origin main
 ```
 
-Then verify the GitHub Pages workflow and all five canonical routes on the live domain.
+Then verify the GitHub Pages workflow and all four canonical routes on the live domain, plus the retired Approach redirects.
 
 ## Design system
 
