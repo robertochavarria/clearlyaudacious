@@ -2,7 +2,7 @@
 
 Production source for **Clearly Audacious**, Roberto Chavarria's strategic-clarity consulting practice for founders and executives.
 
-Live site: <https://clearlyaudacious.robertochavarria.com>
+Live site: <https://clearlyaudacious.com>
 
 ## Positioning
 
