@@ -1,6 +1,6 @@
 # Clearly Audacious
 
-Production source for **Clearly Audacious**, Roberto Chavarria's strategic-clarity consulting practice for founders and executives.
+Production source for **Clearly Audacious**, Roberto Chavarria's strategic-clarity consulting practice for founders, entrepreneurs, and executives.
 
 Live site: <https://clearlyaudacious.com>
 
@@ -8,7 +8,7 @@ Live site: <https://clearlyaudacious.com>
 
 The leader is the primary client. The business and team are the consequential context for the work.
 
-The primary offer is an ongoing strategic-clarity relationship with a founder, owner, or executive. When the issue belongs to the wider organization, the work can expand into:
+The primary offer is an ongoing strategic-clarity relationship with a founder, entrepreneur, or executive. When the issue belongs to the wider organization, the work can expand into:
 
 - **Strategic Diagnostic** — focused inquiry through interviews, observation, and synthesis
 - **Strategy and Leadership Workshop** — a designed working process for the relevant leadership group
