@@ -11,7 +11,7 @@ The leader is the primary client. The business and team are the consequential co
 The primary offer is an ongoing strategic-clarity relationship with a founder, entrepreneur, or executive. When the issue belongs to the wider organization, the work can expand into:
 
 - **Strategic Diagnostic** — focused inquiry through interviews, observation, and synthesis
-- **Strategy and Leadership Workshop** — a designed working process for the relevant leadership group
+- **Strategy and Leadership Offsites** — designed working sessions for the relevant leadership group
 
 Public pricing is intentionally omitted until the offer and numbers are explicitly approved.
 
@@ -20,7 +20,7 @@ Public pricing is intentionally omitted until the offer and numbers are explicit
 ```text
 index.html              Home
 about/index.html        About Roberto
-work/index.html         Work Together
+work/index.html         Services
 contact/index.html      Start a Conversation
 styles.css              Shared design system and responsive styles
 site.js                 Navigation and reveal behavior
@@ -29,7 +29,7 @@ CNAME                   GitHub Pages custom domain
 .nojekyll               Serve files without Jekyll processing
 ```
 
-Legacy root files (`about.html`, `work.html`, and `contact.html`) are lightweight compatibility redirects to the canonical directory routes. The retired `/approach/` route and `approach.html` redirect to Work Together.
+Legacy root files (`about.html`, `work.html`, and `contact.html`) are lightweight compatibility redirects to the canonical directory routes. The retired `/approach/` route and `approach.html` redirect to Services.
 
 ## Local preview
 
@@ -78,7 +78,7 @@ Before publishing:
 6. Scroll the full page and confirm reveal content becomes visible.
 7. Run a serious/critical accessibility scan.
 8. Exercise the mobile menu, including Escape-to-close.
-9. Visually inspect Home, Work Together, and Contact at desktop and mobile widths.
+9. Visually inspect Home, Services, and Contact at desktop and mobile widths.
 
 ## Contact
 
