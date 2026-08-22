@@ -1458,6 +1458,33 @@ footer {
 .section-intro {
   max-width: 64ch;
 }
+.story-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.48fr);
+  gap: clamp(36px, 6vw, 84px);
+  align-items: start;
+}
+.story-layout .section-intro {
+  grid-column: 1;
+  grid-row: 1;
+}
+.story-portrait {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  background: var(--bg-2);
+  aspect-ratio: 4 / 5;
+}
+.story-portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 62% 58%;
+}
 .local-note {
   margin-top: 28px;
   font-family: var(--mono);
@@ -1818,6 +1845,20 @@ a.capability:hover {
   }
 }
 @media (max-width: 860px) {
+  .story-layout {
+    grid-template-columns: 1fr;
+  }
+  .story-layout .section-intro,
+  .story-portrait {
+    grid-column: 1;
+  }
+  .story-layout .section-intro {
+    grid-row: 2;
+  }
+  .story-portrait {
+    grid-row: 1;
+    max-width: 460px;
+  }
   .feature-panel,
   .roberto-teaser {
     grid-template-columns: 1fr;
