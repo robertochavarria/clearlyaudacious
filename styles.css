@@ -1933,6 +1933,7 @@ a.capability:hover {
 .testimonial-feature { padding: 72px 0; background: var(--ink); color: var(--on-dark); }
 .testimonial-feature__grid { display: grid; grid-template-columns: minmax(230px, .55fr) minmax(0, 1.45fr); gap: clamp(44px, 8vw, 120px); align-items: start; }
 .testimonial-attribution { padding-top: 10px; }
+.testimonial-attribution__portrait { display: block; width: 94px; aspect-ratio: 1; margin: 0 0 24px; border: 2px solid rgba(240, 245, 241, .28); border-radius: 50%; object-fit: cover; object-position: center; }
 .testimonial-attribution .lab, .testimonial-rail .lab { display: block; margin-bottom: 14px; }
 .testimonial-attribution h2 { font-family: var(--serif); font-size: 30px; line-height: 1.05; font-weight: 400; }
 .testimonial-attribution p { margin-top: 14px; font-size: 15px; line-height: 1.45; color: rgba(240, 245, 241, .7); }
@@ -1954,7 +1955,9 @@ a.capability:hover {
 .client-perspective > .wrap p:not(.client-perspective__quote):not(.client-perspective__cite) { max-width: 49ch; margin-bottom: 26px; color: var(--ink-soft); }
 .client-perspective aside { padding: 38px 0 38px clamp(28px, 5vw, 62px); border-left: 1px solid var(--line); }
 .client-perspective__quote { font-family: var(--serif); font-size: clamp(25px, 2.6vw, 36px); line-height: 1.17; letter-spacing: -.02em; }
-.client-perspective__cite { margin-top: 28px; font-family: var(--mono); font-size: 11px; line-height: 1.6; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); }
+.client-perspective__person { display: flex; align-items: center; gap: 16px; margin-top: 28px; }
+.client-perspective__person img { flex: 0 0 auto; width: 62px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: center; }
+.client-perspective__cite { margin-top: 0; font-family: var(--mono); font-size: 11px; line-height: 1.6; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); }
 .client-perspective__cite span { color: var(--ink-soft); }
 @media (max-width: 860px) {
   .testimonial-feature__grid, .testimonial-reading__grid, .client-perspective__grid { grid-template-columns: 1fr; }
