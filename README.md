@@ -22,6 +22,7 @@ index.html              Home
 about/index.html        About Roberto
 work/index.html         Services
 contact/index.html      Start a Conversation
+testimonials/index.html Client testimonials
 styles.css              Shared design system and responsive styles
 site.js                 Navigation and reveal behavior
 images/                 Production images
