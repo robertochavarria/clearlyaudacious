@@ -1931,6 +1931,7 @@ a.capability:hover {
 /* ---------------- TESTIMONIALS ---------------- */
 .testimonial-masthead .standfirst { max-width: 52ch; }
 .testimonial-feature { padding: 72px 0; background: var(--ink); color: var(--on-dark); }
+.testimonial-feature--signal { background: var(--accent-deep); }
 .testimonial-feature__grid { display: grid; grid-template-columns: minmax(230px, .55fr) minmax(0, 1.45fr); gap: clamp(44px, 8vw, 120px); align-items: start; }
 .testimonial-attribution { padding-top: 10px; }
 .testimonial-attribution__portrait { display: block; width: 94px; height: 94px; margin: 0 0 24px; border: 2px solid rgba(240, 245, 241, .28); border-radius: 50%; object-fit: cover; object-position: center; }
@@ -1950,6 +1951,7 @@ a.capability:hover {
 .testimonial-signoff { margin-top: 60px; padding-top: 25px; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 24px; line-height: 1.2; }
 .testimonial-signoff span { display: block; margin-top: 8px; color: var(--ink-soft); font-family: var(--sans); font-size: 14px; line-height: 1.45; }
 .client-perspective { padding: 80px 0; background: var(--bg-2); }
+.client-perspective--alternate { background: var(--bg); border-top: 1px solid var(--line-soft); }
 .client-perspective__grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); gap: clamp(45px, 8vw, 120px); align-items: center; }
 .client-perspective h2 { max-width: 18ch; margin: 25px 0 22px; font-family: var(--serif); font-size: clamp(34px, 4vw, 54px); line-height: 1.07; letter-spacing: -.025em; font-weight: 330; }
 .client-perspective > .wrap p:not(.client-perspective__quote):not(.client-perspective__cite) { max-width: 49ch; margin-bottom: 26px; color: var(--ink-soft); }
