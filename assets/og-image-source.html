@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Clearly Audacious social sharing image</title>
+  <style>
+    @font-face {
+      font-family: "Newsreader";
+      font-style: normal;
+      font-weight: 300 600;
+      src: url("../fonts/newsreader-normal-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Newsreader";
+      font-style: italic;
+      font-weight: 300 500;
+      src: url("../fonts/newsreader-italic-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Hanken Grotesk";
+      font-style: normal;
+      font-weight: 400 700;
+      src: url("../fonts/hanken-grotesk-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400 500;
+      src: url("../fonts/ibm-plex-mono-500-latin.woff2") format("woff2");
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      position: relative;
+      color: #172a22;
+      background: #f0f5f1;
+      font-family: "Hanken Grotesk", sans-serif;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .025;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .rule { position: absolute; top: 0; left: 0; right: 0; height: 11px; background: #315f48; }
+    .signal { position: absolute; width: 260px; height: 260px; right: 36px; bottom: -90px; border-radius: 50%; background: #4e7185; opacity: .18; }
+    .frame { position: absolute; inset: 0; padding: 53px 62px 48px; }
+    .brand { display: flex; align-items: baseline; gap: 20px; }
+    .brand-name { font-family: "Newsreader", Georgia, serif; font-size: 30px; font-weight: 500; line-height: 1; letter-spacing: -.01em; }
+    .brand-name em { color: #315f48; font-weight: 400; }
+    .brand-sub { padding-left: 20px; border-left: 1px solid rgba(23,42,34,.2); font-family: "IBM Plex Mono", monospace; font-size: 11px; font-weight: 500; line-height: 1; letter-spacing: .16em; text-transform: uppercase; }
+    .quote-mark { position: absolute; left: 42px; top: 116px; color: #94bca4; opacity: .3; font-family: "Newsreader", Georgia, serif; font-size: 170px; font-weight: 300; line-height: 1; }
+    blockquote { position: absolute; left: 62px; top: 184px; width: 760px; margin: 0; font-family: "Newsreader", Georgia, serif; font-size: 76px; font-weight: 330; line-height: .96; letter-spacing: -.035em; }
+    blockquote span { display: block; }
+    blockquote em { color: #315f48; font-weight: 400; }
+    .closing { position: absolute; left: 62px; bottom: 51px; display: flex; align-items: center; gap: 13px; color: #53675e; font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1; letter-spacing: .12em; text-transform: uppercase; }
+    .closing::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #315f48; }
+    .portrait-wrap { position: absolute; right: 62px; top: 125px; width: 262px; height: 402px; padding: 9px; background: #dde9e0; border: 1px solid rgba(23,42,34,.15); border-radius: 5px; transform: rotate(1.2deg); }
+    .portrait-wrap::after { content: ""; position: absolute; right: -17px; top: 25px; width: 1px; height: 342px; background: #315f48; opacity: .38; }
+    .portrait { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 27%; border-radius: 2px; filter: saturate(.87) contrast(.98); }
+    .tag { position: absolute; right: 36px; top: 101px; z-index: 2; padding: 8px 13px 7px; color: #f0f5f1; background: #315f48; border-radius: 999px; font-family: "IBM Plex Mono", monospace; font-size: 10px; font-weight: 500; line-height: 1; letter-spacing: .13em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="rule"></div>
+  <div class="signal"></div>
+  <main class="frame">
+    <div class="brand">
+      <div class="brand-name">Clearly <em>Audacious</em></div>
+      <div class="brand-sub">Strategic Clarity Consulting</div>
+    </div>
+    <div class="quote-mark" aria-hidden="true">“</div>
+    <blockquote>
+      <span>The world needs</span>
+      <span>your <em>audacity</em></span>
+    </blockquote>
+    <div class="closing">For founders, entrepreneurs &amp; executives</div>
+    <div class="tag">Roberto Chavarria</div>
+    <div class="portrait-wrap"><img class="portrait" src="../images/portrait-web.jpg" alt=""></div>
+  </main>
+</body>
+</html>
